@@ -1,4 +1,4 @@
-# Protein Sequence Embeddings Visualization
+# Protein Sequence Embeddings
 
 ## Submitted: November 29, 2021.
 
@@ -15,7 +15,7 @@ This workflow was built to allow users to create a labelled training set for the
 
 - Sequence Extraction: Protein sequences are extracted from pdb files
 - Embedding Mapping: Representations for each sequence are mapped and calculated based on the stored amino acids. They are labelled with their PDB ID and are output to a file which makes it easy to later import for training of an ML model.
-- t-SNE Plotting: Proteins (or subset of) are mapped using the dimentionality reduction method t-SNE. This allows users to investigate potential trends captured in the representations for data exploration purposes.
+- t-SNE Plotting: Proteins embeddings are mapped using the dimentionality reduction method t-SNE. This allows users to investigate potential trends captured in the representations for data exploration purposes.
 
 <img src="https://github.com/ogarland/ProteinEmbeddings/blob/main/workflow.png?raw=true" width="300" height="300">
 
@@ -47,14 +47,13 @@ ProteinEmbeddings takes PDB .ent files as input. Any number of files can be used
 These .ent files can be retrived from the Protein Data Bank (PDB) and contain sequence, experimental and structural information.
 
 ### Output
-ProteinEmbeddings outputs will appear in the `results/` folder. The first output is a pickle file called `embeddings.pkl` which contains the labels for the proteins as well as their corresponding embedding. The second output, is t-SNE plot of the embeddings. If there are more than 50 proteins, 50 will be randomly sampled and plotted. 
-
+ProteinEmbeddings outputs will appear in the `results/` folder. The first output is a pickle file called `embeddings.pkl` which contains the labels for the proteins as well as their corresponding embedding. The second output, is t-SNE plot of the embeddings.
 
 t-SNE Output example
 ------------- 
 <img src="https://github.com/ogarland/ProteinEmbeddings/blob/main/results/tSNE.png?raw=true" width="500" height="300"> 
 
-- t-SNE plot: This is a visualization for high dimensional data based on Stochastic Neighbor Embedding. Axes do not refer to spatial coordinates. A t-SNE plot is included to show that comparing to the labelled spatial graphs, the labelled spatial graphs can allow users to visualize the inherent spatial structure better than a visualization that only considers expression values. 
+- t-SNE plot: This is a visualization for dimension reduction of high dimensional data based on Stochastic Neighbor Embedding. Axes do not refer to spatial coordinates. As the paper describing this model suggests that biological properties are captured in the embeddings, using a tSNE plot allows the users to investigate the kinds of trends that may be captured in their embeddings. 
 
 ### References
 
