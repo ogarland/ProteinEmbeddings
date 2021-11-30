@@ -42,7 +42,7 @@ snakemake --cores 1 results/tSNE.png
 
 
 ### Input
-ProteinEmbeddings takes PDB .ent files as input. Any number of files can be used, and they all should be placed in thefolder `data/`. 
+ProteinEmbeddings takes PDB .ent files as input. Any number of files can be used, and they all should be placed in the folder `data/`. 
 
 These .ent files can be retrived from the Protein Data Bank (PDB) and contain sequence, experimental and structural information.
 
