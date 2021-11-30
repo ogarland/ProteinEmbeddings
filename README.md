@@ -23,7 +23,7 @@ This workflow was built to allow users to create a labelled training set for the
 ### Usage
 The execution of the following files *requires* a **Linux OS** and **Python 3**. If you are using Windows, please *make sure you are setting up a VM*.
 
-1. Clone this file in a proper directory. This will download all the files and datasets necessary for execution. The output will be a folder named "Cluster-Viz".
+1. Clone this file in a proper directory. This will download all the files and datasets necessary for execution. The output will be a folder named "ProteinEmbeddings".
 ```
 git clone https://github.com/ogarland/ProteinEmbeddings.git
 ```
