@@ -29,7 +29,7 @@ git clone https://github.com/ogarland/ProteinEmbeddings.git
 ```
 2. Create an environment with all the dependencies. This will manage all the packages under the same collection for execution.
 ```
-conda env create --name protemb --file environment.yaml
+conda env create --name protemb --file environment.yml
 ```
 3. Activate the environment.
 ```
