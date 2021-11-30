@@ -25,7 +25,7 @@ The execution of the following files *requires* a **Linux OS** and **Python 3**.
 
 1. Clone this file in a proper directory. This will download all the files and datasets necessary for execution. The output will be a folder named "Cluster-Viz".
 ```
-git clone https://github.com/
+git clone https://github.com/ogarland/ProteinEmbeddings.git
 ```
 2. Create an environment with all the dependencies. This will manage all the packages under the same collection for execution.
 ```
